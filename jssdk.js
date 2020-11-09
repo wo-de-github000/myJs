@@ -34,7 +34,7 @@ function openGMap (params) {
 }
 
 function customeGetLocation (params, resCall, errCall) {
-  alert(0)
+  resCall({  lat: 39.92, lng: 116.46 })
   // H5 瀹氫綅
   // if (navigator.geolocation) {
   //   h5Location(resCall)
