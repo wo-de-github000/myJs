@@ -47,6 +47,7 @@ function openGMap(params) {
 function customeGetLocation(params, resCall, errCall) {
   console.log('customeGetLocation');
   //处理定位情况，由于该方式通过app处理，无需操作 保留H5定位方法【h5Location】
+  h5Location(resCall);
 }
 
 function customeLaunchNav(params) {
