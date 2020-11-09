@@ -35,12 +35,12 @@ function openGMap (params) {
 
 function customeGetLocation (params, resCall, errCall) {
   // H5 瀹氫綅
-  if (navigator.geolocation) {
-    h5Location(resCall)
-  } else {
-    // console.log()
-    errCall && errCall(new Error('娴忚鍣ㄤ笉鏀寔瀹氫綅'))
-  }
+  // if (navigator.geolocation) {
+  //   h5Location(resCall)
+  // } else {
+  //   // console.log()
+  //   errCall && errCall(new Error('娴忚鍣ㄤ笉鏀寔瀹氫綅'))
+  // }
 }
 
 function customeLaunchNav (params) {
