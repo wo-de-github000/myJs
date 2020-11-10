@@ -47,7 +47,22 @@ function openGMap(params) {
 function customeGetLocation(params, resCall, errCall) {
   console.log('customeGetLocation');
   //处理定位情况，由于该方式通过app处理，无需操作 保留H5定位方法【h5Location】
-  h5Location(resCall);
+  // h5Location(resCall);
+  var lng = getQueryVariable('lng')
+  var lat = getQueryVariable('lat')
+  if (lng && lat) {
+    resCall({lng:lng,lat,lat})
+  }
+}
+
+function getQueryVariable(variable){
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
 }
 
 function customeLaunchNav(params) {
